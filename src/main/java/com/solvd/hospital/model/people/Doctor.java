@@ -4,16 +4,18 @@ import com.solvd.hospital.dao.daoInterfaces.IBaseDAO;
 
 import java.util.Objects;
 
-public class Doctor extends User implements IBaseDAO <Doctor>{
-    static long userId;
+public class Doctor extends Person implements IBaseDAO <Doctor>{
+    private long doctorId;
     private String registrationNumber;
     private long welfareWork;
     private long specialties;
 
 
+    public Doctor(){}
 
-    public Doctor(long userId, String name, String lastName, String email, String address, String phone, String password, String registrationNumber, long welfareWork, long specialties) {
-        super(name, lastName, email);
+    public Doctor(long doctorId,String registrationNumber, long welfareWork, long specialties) {
+        super();
+        this.doctorId = doctorId;
         this.registrationNumber = registrationNumber;
         this.welfareWork = welfareWork;
         this.specialties = specialties;

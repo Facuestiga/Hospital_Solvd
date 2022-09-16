@@ -2,6 +2,8 @@ package com.solvd.hospital.model.connections;
 import org.apache.logging.log4j.Logger;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import static org.apache.logging.log4j.LogManager.getLogger;
@@ -40,8 +42,7 @@ public class ConnectionPool {
 
     private synchronized void newConnection(){
         logger.info("A new connection is being created with a number of: " + connectionCount);
-        connections
-                .add(new Connection(connectionCount));
+        connections.add(new Connection(connectionCount));
         connectionCount++;
     }
 
@@ -53,8 +54,8 @@ public class ConnectionPool {
 
     }
 
-    public void add(Connection conn){
-        connections.offer(conn); //Inserts the specified element at the tail of this queue - al final de la cola
+    public void returnConnection(Connection conn){
+        connections.add(conn); //Inserts the specified element at the tail of this queue - al final de la cola
                                 //returning true upon success and false if this queue is full.
     }
     public void freeConnection(Connection connection) throws InterruptedException {

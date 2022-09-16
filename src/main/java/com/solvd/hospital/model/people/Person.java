@@ -8,7 +8,6 @@ public class Person {
     private int dni;
     private String phone;
     private String address;
-    private String pathology;
     private double weight;
     private double height;
     private int age;
@@ -17,7 +16,7 @@ public class Person {
 
     }
 
-    public Person(String name, String lastName, int dni, String phone, String address, String pathology, double weight, double height, int age) {
+    public Person(String name, String lastName, int dni, String phone, String address,  double weight, double height, int age) {
         this.name = name;
         this.lastName = lastName;
         this.dni = dni;
@@ -71,13 +70,6 @@ public class Person {
         this.address = address;
     }
 
-    public String getPathology() {
-        return pathology;
-    }
-
-    public void setPathology(String pathology) {
-        this.pathology = pathology;
-    }
 
     public double getWeight() {
         return weight;
@@ -111,7 +103,6 @@ public class Person {
                 ", dni=" + dni +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
-                ", pathology='" + pathology + '\'' +
                 ", weight=" + weight +
                 ", height=" + height +
                 ", age=" + age +
@@ -123,12 +114,12 @@ public class Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return dni == person.dni && Double.compare(person.weight, weight) == 0 && Double.compare(person.height, height) == 0 && age == person.age && Objects.equals(name, person.name) && Objects.equals(lastName, person.lastName) && Objects.equals(phone, person.phone) && Objects.equals(address, person.address) && Objects.equals(pathology, person.pathology);
+        return dni == person.dni && Double.compare(person.weight, weight) == 0 && Double.compare(person.height, height) == 0 && age == person.age && Objects.equals(name, person.name) && Objects.equals(lastName, person.lastName) && Objects.equals(phone, person.phone) && Objects.equals(address, person.address) ;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, lastName, dni, phone, address, pathology, weight, height, age);
+        return Objects.hash(name, lastName, dni, phone, address, weight, height, age);
     }
 
 

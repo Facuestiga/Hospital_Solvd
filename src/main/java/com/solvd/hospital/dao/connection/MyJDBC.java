@@ -14,7 +14,7 @@ public class MyJDBC {
     private static final Logger logger = LogManager.getLogger(MyJDBC.class);
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/model_hospital_db";
     private static final String JDBC_USER = "root";
-    private static final String JDBC_PASS = "tito_sql99";
+    private static final String JDBC_PASS = "root";
 
     private static BasicDataSource dataSource;
 
