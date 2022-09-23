@@ -1,8 +1,10 @@
 package com.solvd.hospital.dao.mySql;
 
 import com.solvd.hospital.model.connections.ConnectionPool;
+import com.solvd.hospital.model.people.Patient;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public abstract class AbstractMySqlDAO {
    private static ConnectionPool connectionPool = ConnectionPool.getInstance();
@@ -23,4 +25,6 @@ public abstract class AbstractMySqlDAO {
    public void returnConnection(Connection c){
         ConnectionPool.getInstance().returnConnection((com.solvd.hospital.model.connections.Connection) c);
    }
+
+    public abstract Object getById(Long id) throws SQLException;
 }

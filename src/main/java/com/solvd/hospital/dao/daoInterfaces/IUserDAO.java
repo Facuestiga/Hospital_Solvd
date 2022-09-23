@@ -4,6 +4,6 @@ import com.solvd.hospital.model.people.User;
 
 import java.util.List;
 
-public interface IUserDAO extends IBaseDAO<User>{
+public interface IUserDAO extends IBaseDAO<User, Long>{
     List<User> getAllUsers();
 }

@@ -4,8 +4,8 @@ import com.solvd.hospital.dao.daoInterfaces.IBaseDAO;
 
 import java.util.Objects;
 
-public class Doctor extends Person implements IBaseDAO <Doctor>{
-    private long doctorId;
+public class Doctor extends Person {
+    private Long doctorId;
     private String registrationNumber;
     private long welfareWork;
     private long specialties;
@@ -13,7 +13,7 @@ public class Doctor extends Person implements IBaseDAO <Doctor>{
 
     public Doctor(){}
 
-    public Doctor(long doctorId,String registrationNumber, long welfareWork, long specialties) {
+    public Doctor(Long doctorId,String registrationNumber, long welfareWork, long specialties) {
         super();
         this.doctorId = doctorId;
         this.registrationNumber = registrationNumber;
@@ -68,23 +68,5 @@ public class Doctor extends Person implements IBaseDAO <Doctor>{
         return Objects.hash(super.hashCode(), registrationNumber, welfareWork, specialties);
     }
 
-    @Override
-    public void create(Doctor object) {
 
-    }
-
-    @Override
-    public Doctor getById(long id) {
-        return null;
-    }
-
-    @Override
-    public void update(Doctor object) {
-
-    }
-
-    @Override
-    public void delete(long id) {
-
-    }
 }

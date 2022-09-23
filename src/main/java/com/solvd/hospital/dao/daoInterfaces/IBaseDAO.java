@@ -1,15 +1,21 @@
 package com.solvd.hospital.dao.daoInterfaces;
 
+import com.solvd.hospital.model.exception.DAOException;
+
+import java.net.ConnectException;
 import java.sql.SQLException;
+import java.util.List;
 
-public interface IBaseDAO <T> {
-    void create (T object);
+public interface IBaseDAO <T, K> {
+    void create (T object) throws SQLException;
 
-    T getById (long id) throws SQLException;
+    T getById (K id) throws SQLException;
 
-    void update (T object);
+    void update (T object) throws DAOException,ConnectException, SQLException;
 
-    void delete (long id);
+    void delete (K id) throws SQLException;
+
+    List<T> listAll () throws SQLException;
 
 
 }

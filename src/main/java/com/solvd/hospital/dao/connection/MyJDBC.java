@@ -29,6 +29,7 @@ public class MyJDBC {
     }
 
 
+
     /**
      * return a data source to connected to the data base
      * @return  dataSource
@@ -62,6 +63,10 @@ public class MyJDBC {
             e.printStackTrace();
             logger.error(e);
         }
+    }
+
+    private static void closeDatabaseConnectionPool() throws SQLException {
+        dataSource.close();
     }
 
     /**

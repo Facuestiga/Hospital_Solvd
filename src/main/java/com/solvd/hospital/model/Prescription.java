@@ -1,7 +1,7 @@
 package com.solvd.hospital.model;
 
 public class Prescription {
-    private int id;
+    private Long id;
     private String details;
     private int patientId;
     private int doctorId;
@@ -9,7 +9,7 @@ public class Prescription {
 
     public Prescription(){}
 
-    public Prescription(int id, String details, int patientId, int doctorId, int medicalHistoryId) {
+    public Prescription(Long id, String details, int patientId, int doctorId, int medicalHistoryId) {
         this.id = id;
         this.details = details;
         this.patientId = patientId;
@@ -17,11 +17,11 @@ public class Prescription {
         this.medicalHistoryId = medicalHistoryId;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

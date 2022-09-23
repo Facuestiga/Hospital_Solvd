@@ -1,5 +1,8 @@
 package com.solvd.hospital.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Medicine {
     private long id;
     private String name;

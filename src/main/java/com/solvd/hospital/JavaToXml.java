@@ -1,16 +1,14 @@
-package com.solvd.hospital.services;
+package com.solvd.hospital;
 import com.solvd.hospital.model.people.Patient;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import java.io.File;
-import java.sql.SQLException;
-public class JAXBtoJava {
-    private static Logger logger = LogManager.getLogger(JAXBtoJava.class);
+
+public class JavaToXml {
+    private static Logger logger = LogManager.getLogger(JavaToXml.class);
 
     public static void main(String[] args) {
 

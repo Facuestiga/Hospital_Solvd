@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlTransient;
 public class Patient extends Person {
 
 
-    private long id;
+    private Long id;
     private String pathology;
     private long roomId;
     private long doctorId;
@@ -15,7 +15,7 @@ public class Patient extends Person {
 
     public Patient(){}
 
-    public Patient(long id, String pathology, long roomId, long doctorId, int medicineId) {
+    public Patient(Long id, String pathology, long roomId, long doctorId, int medicineId) {
         this.id = id;
         this.pathology = pathology;
         this.roomId = roomId;

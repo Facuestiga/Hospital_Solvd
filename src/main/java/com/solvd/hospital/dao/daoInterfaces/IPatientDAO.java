@@ -1,4 +1,6 @@
 package com.solvd.hospital.dao.daoInterfaces;
 
-public interface IPatientDAO {
+import com.solvd.hospital.model.people.Patient;
+
+public interface IPatientDAO extends IBaseDAO <Patient, Long> {
 }

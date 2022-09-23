@@ -1,13 +1,13 @@
 package com.solvd.hospital.model;
 
 public class WelfareWork {
-    private long id;
+    private Long id;
     private String name;
     private long patientsId;
 
     public WelfareWork(){}
 
-    public WelfareWork(long id, String name, long patientsId) {
+    public WelfareWork(Long id, String name, long patientsId) {
         this.id = id;
         this.name = name;
         this.patientsId = patientsId;
@@ -17,7 +17,7 @@ public class WelfareWork {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

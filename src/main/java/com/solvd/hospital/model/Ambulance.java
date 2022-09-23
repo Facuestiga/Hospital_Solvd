@@ -1,7 +1,7 @@
 package com.solvd.hospital.model;
 
 public class Ambulance {
-    private long id;
+    private Long id;
     private String make;
     private String model;
     private long driverId;
@@ -9,7 +9,7 @@ public class Ambulance {
 
     public Ambulance(){}
 
-    public Ambulance(long id, String make, String model, long driverId, long patientId) {
+    public Ambulance(Long id, String make, String model, long driverId, long patientId) {
         this.id = id;
         this.make = make;
         this.model = model;
@@ -17,11 +17,11 @@ public class Ambulance {
         this.patientId = patientId;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

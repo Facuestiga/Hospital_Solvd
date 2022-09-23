@@ -1,4 +1,6 @@
 package com.solvd.hospital.dao.daoInterfaces;
 
-public interface IWelfareWorksDAO {
+import com.solvd.hospital.model.WelfareWork;
+
+public interface IWelfareWorksDAO extends IBaseDAO <WelfareWork, Long> {
 }

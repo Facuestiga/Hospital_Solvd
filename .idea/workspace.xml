@@ -18,11 +18,16 @@
       <change afterPath="$PROJECT_DIR$/../JavaDashboard/src/add-group.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaDashboard/src/enter.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaDashboard/src/financial-profit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/services/JAXBtoJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/JavaToXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/XmlToJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IMedicineDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/exception/ConnectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/exception/DAOException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Ambulance.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Prescription.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Model_DB_Hospital1/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Model_DB_Hospital1/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Model_DB_Hospital1/.idea/modules.xml" afterDir="false" />
@@ -44,29 +49,88 @@
       <change afterPath="$PROJECT_DIR$/../SolvdHospital/src/main/java/com/solvd/hospital/appHospital/presentationI/Form.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SolvdHospital/src/main/java/com/solvd/hospital/appHospital/presentationI/Model.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demoJavaProject/demoJavaProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model_DB_Hospital.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Model_DB_Hospital.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/connection/MyJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/connection/MyJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IBaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IBaseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IPatientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IPatientDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IWelfareWorksDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/daoInterfaces/IWelfareWorksDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/AbstractMySqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/AbstractMySqlDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/MedicineDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/MedicineDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/PatientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/PatientDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/WelfareWorkDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/dao/mySql/WelfareWorkDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/Ambulance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/Ambulance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/Prescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/WelfareWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/WelfareWork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/connections/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/connections/ConnectionPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/Patient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/solvd/hospital/model/people/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Medicine.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Medicine.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Patient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/connection/MyJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/connection/MyJDBC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IBaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IBaseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/AbstractMySqlDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/AbstractMySqlDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/PatientDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/PatientDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/connections/ConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/connections/ConnectionPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Doctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Doctor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MedicalHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Medicine.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Patient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/connection/MyJDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IAmbulanceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IAreaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IBaseDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IDoctorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IMedicalHistoriesDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/INurses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IPatientDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IPayment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IUserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/daoInterfaces/IWelfareWorksDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/AbstractMySqlDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/AmbulanceDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/AreaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/BedDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/DoctorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/DoctorLicensesDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/MedicalHistoryDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/MedicineDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/NurseDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/PatientDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/PaymentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/RoomDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/SpecialtiesDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/UserTypeDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/dao/mySql/WelfareWorkDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/Ambulance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/Bed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/DoctorLicenses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/MedicalHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/Medicine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/Prescription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/WelfareWork.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/connections/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/connections/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/connections/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/connections/RunnableConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/enums/Specialties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/enums/UserTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Doctor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Nurse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Patient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/model/people/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/solvd/hospital/services/JAXBtoJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hospital_model.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/student.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +141,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -131,13 +195,13 @@
       <recent name="com.solvd.hospital.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JAXBtoJava">
-    <configuration name="JAXBtoJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.solvd.hospital.services.JAXBtoJava" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="JavaToXml" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.hospital.JavaToXml" />
       <module name="Model_DB_Hospital" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.solvd.hospital.services.*" />
+          <option name="PATTERN" value="com.solvd.hospital.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,6 +215,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.solvd.hospital.model.connections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XmlToJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solvd.hospital.XmlToJava" />
+      <module name="Model_DB_Hospital" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solvd.hospital.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,9 +250,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JAXBtoJava" />
-        <item itemvalue="Application.com.solvd.hospital.model.MainTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.com.solvd.hospital.services.XmlToJava" />
+        <item itemvalue="Application.com.solvd.hospital.services.JavaToXml" />
+        <item itemvalue="Application.com.solvd.hospital.model.MainTest" />
       </list>
     </recent_temporary>
   </component>

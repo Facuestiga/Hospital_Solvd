@@ -9,14 +9,14 @@ import org.apache.logging.log4j.Logger;
 
 public class User extends Person {
     private static Logger log = LogManager.getLogger(User.class);
-    private long userId;
+    private Long userId;
     private String password;
 
     public User(String name, String lastName, String email){
 
     }
 
-    public User(long userId, String password) {
+    public User(Long userId, String password) {
         this.userId = userId;
         this.password = password;
     }
