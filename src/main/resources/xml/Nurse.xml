@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Nurse id = "1">
+    <name>Sofia</name>
+    <last_name>Balverdi</last_name>
+    <doctors_Id>1</doctors_Id>
+
+</Nurse>

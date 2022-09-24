@@ -1,4 +1,4 @@
-package com.solvd.hospital;
+package com.solvd.hospital.jaxb;
 
 import java.io.StringReader;
 

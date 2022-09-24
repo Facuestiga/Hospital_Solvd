@@ -1,4 +1,4 @@
-package com.solvd.hospital;
+package com.solvd.hospital.jaxb;
 import com.solvd.hospital.model.people.Patient;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

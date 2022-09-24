@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Payment id = "1">
+    <price>300</price>
+    <medical_historyId></medical_historyId>
+    <patients_Id>1</patients_Id>
+</Payment>

@@ -1,9 +1,16 @@
 package com.solvd.hospital.model;
 
+import com.solvd.hospital.model.people.Patient;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Room {
     private long id;
     private String description;
     private long areaId;
+
+    private List<Patient> patientList;
 
     public Room(){}
 
@@ -11,6 +18,7 @@ public class Room {
         this.id = id;
         this.description = description;
         this.areaId = areaId;
+        this.patientList = new ArrayList<>();
     }
 
     public void setId(long id) {
@@ -35,6 +43,18 @@ public class Room {
 
     public long getAreaId() {
         return areaId;
+    }
+
+    public List<Patient> getPatientList() {
+        return patientList;
+    }
+
+    public void setPatientList(List<Patient> patientList) {
+        this.patientList = patientList;
+    }
+
+    public void addPatient(Patient p){
+        this.patientList.add(p);
     }
 
     @Override

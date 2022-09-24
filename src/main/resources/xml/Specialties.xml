@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Specialties id = "1">
+    <name>Traumatologist</name>
+    id = "2"
+    <name>Psyquiatrist</name>
+    id = "3"
+    <name>Dermatologist</name>
+
+</Specialties>
